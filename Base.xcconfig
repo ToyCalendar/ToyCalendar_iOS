@@ -1,0 +1,23 @@
+//
+//  Base.xcconfig
+//  ToyCalendar
+//
+//  Created by sdondon on 23/12/2018.
+//  Copyright © 2018 YAPP. All rights reserved.
+//
+
+DEBUG_VERSION   = 0.0.1.2
+STAGING_VERSION = 0.0.1.1
+RELEASE_VERSION = 0.0.1
+
+BUILD_NUMBER    = 1
+
+// APP Name
+DEBUG_NAME      = ToyCalendar Debug
+STAGING_NAME    = ToyCalendar Staging
+Release_NAME    = ToyCalendar
+
+// Identifier
+DEBUG_IDENTIFIER    = com.yapp.ToyCalendar
+STAGING_IDENTIFIER  = com.yapp.ToyCalendar.stage
+RELEASE_IDENTIFIER  = com.yapp.ToyCalendar

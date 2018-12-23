@@ -1,0 +1,6 @@
+framework module Pods_ToyCalendarTests {
+  umbrella header "Pods-ToyCalendarTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

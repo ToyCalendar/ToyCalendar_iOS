@@ -1,0 +1,13 @@
+//
+//  Debug.xcconfig
+//  ToyCalendar
+//
+//  Created by sdondon on 23/12/2018.
+//  Copyright © 2018 YAPP. All rights reserved.
+//
+
+#include "Base.xcconfig"
+
+APP_NAME        = $(DEBUG_NAME)
+APP_IDENTIFIER  = $(DEBUG_IDENTIFIER)
+APP_VERSION     = $(DEBUG_VERSION)

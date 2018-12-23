@@ -1,0 +1,13 @@
+//
+//  Staging.xcconfig
+//  ToyCalendar
+//
+//  Created by sdondon on 23/12/2018.
+//  Copyright © 2018 YAPP. All rights reserved.
+//
+
+#include "Base.xcconfig"
+
+APP_NAME        = $(STAGING_NAME)
+APP_IDENTIFIER  = $(STAGING_IDENTIFIER)
+APP_VERSION     = $(STAGING_VERSION)
