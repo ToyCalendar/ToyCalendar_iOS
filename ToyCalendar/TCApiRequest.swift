@@ -70,6 +70,8 @@ extension TCApiRequest {
         var request: URLRequest = URLRequest(url: url)
         request.httpMethod = method.rawValue
         request.timeoutInterval = timeout
+        // TODO: 리얼 API 연결 시 제거
+        request.cachePolicy = .reloadIgnoringCacheData
         
         if method != .get {
             var queryComponents: URLComponents = URLComponents()

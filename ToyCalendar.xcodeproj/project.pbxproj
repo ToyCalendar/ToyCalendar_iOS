@@ -18,6 +18,7 @@
 		CE0DAEE921CF5909004CB1A5 /* ToyCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DAEE821CF5909004CB1A5 /* ToyCalendarTests.swift */; };
 		CE0DAEF421CF5909004CB1A5 /* ToyCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DAEF321CF5909004CB1A5 /* ToyCalendarUITests.swift */; };
 		CE20384A221E5ADC00ED9BA7 /* TCApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE203849221E5ADC00ED9BA7 /* TCApiRequest.swift */; };
+		CE20384C221EA32400ED9BA7 /* CalendarDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20384B221EA32400ED9BA7 /* CalendarDataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		CE0DAF0B21CF59BA004CB1A5 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
 		CE0DAF0C21CF59BB004CB1A5 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		CE203849221E5ADC00ED9BA7 /* TCApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCApiRequest.swift; sourceTree = "<group>"; };
+		CE20384B221EA32400ED9BA7 /* CalendarDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDataController.swift; sourceTree = "<group>"; };
 		CE6F7996262231F583E00EFE /* Pods-ToyCalendarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyCalendarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToyCalendarUITests/Pods-ToyCalendarUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D28869FE7D50120FBCC705FE /* Pods-ToyCalendarUITests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyCalendarUITests.staging.xcconfig"; path = "Pods/Target Support Files/Pods-ToyCalendarUITests/Pods-ToyCalendarUITests.staging.xcconfig"; sourceTree = "<group>"; };
 		E73BFC3604FE92F586E71008 /* Pods-ToyCalendarTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyCalendarTests.staging.xcconfig"; path = "Pods/Target Support Files/Pods-ToyCalendarTests/Pods-ToyCalendarTests.staging.xcconfig"; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				CE0DAED521CF5907004CB1A5 /* ViewController.swift */,
+				CE20384B221EA32400ED9BA7 /* CalendarDataController.swift */,
 			);
 			name = Calendar;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				CE0DAED621CF5907004CB1A5 /* ViewController.swift in Sources */,
 				CE20384A221E5ADC00ED9BA7 /* TCApiRequest.swift in Sources */,
 				CE0DAED421CF5907004CB1A5 /* AppDelegate.swift in Sources */,
+				CE20384C221EA32400ED9BA7 /* CalendarDataController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
