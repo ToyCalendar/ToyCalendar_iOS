@@ -7,12 +7,15 @@
 //
 
 import UIKit
-
+import FBSDKCoreKit
+import FBSDKLoginKit
 class LoginViewController: UIViewController {
 
     
     
-    
+    @IBAction func facebookLoginBtn(_ sender: Any) {
+        FBRequester.executeLogin(self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,4 +33,6 @@ class LoginViewController: UIViewController {
     }
     */
 
+    
+    
 }

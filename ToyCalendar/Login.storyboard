@@ -87,6 +87,9 @@
                                         <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="facebookLoginBtn:" destination="ymx-qC-NBE" eventType="touchUpInside" id="5hP-9e-HDO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOO-Ve-jac">
                                 <rect key="frame" x="16" y="591" width="343" height="47"/>
