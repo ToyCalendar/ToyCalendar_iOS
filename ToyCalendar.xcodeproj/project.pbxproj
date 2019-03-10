@@ -13,6 +13,7 @@
 		5C6D18A12235554B000D403B /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6D18A02235554B000D403B /* FBSDKCoreKit.framework */; };
 		5C6D18A32235554B000D403B /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6D18A22235554B000D403B /* FBSDKLoginKit.framework */; };
 		5C6D18A522355C12000D403B /* FBRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D18A422355C12000D403B /* FBRequester.swift */; };
+		5C6D18AC22356321000D403B /* KakaoRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D18AB22356321000D403B /* KakaoRequester.swift */; };
 		5CFE0F5C2225920000F62D4F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CFE0F5B2225920000F62D4F /* Login.storyboard */; };
 		5CFE0F5F222595B400F62D4F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFE0F5E222595B400F62D4F /* LoginViewController.swift */; };
 		5CFE0F61222597B900F62D4F /* IBDesignExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFE0F60222597B900F62D4F /* IBDesignExtension.swift */; };
@@ -54,6 +55,8 @@
 		5C6D18A02235554B000D403B /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C6D18A22235554B000D403B /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C6D18A422355C12000D403B /* FBRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBRequester.swift; sourceTree = "<group>"; };
+		5C6D18A622356072000D403B /* ToyCalendar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToyCalendar-Bridging-Header.h"; sourceTree = "<group>"; };
+		5C6D18AB22356321000D403B /* KakaoRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoRequester.swift; sourceTree = "<group>"; };
 		5CFE0F5B2225920000F62D4F /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		5CFE0F5E222595B400F62D4F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5CFE0F60222597B900F62D4F /* IBDesignExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignExtension.swift; sourceTree = "<group>"; };
@@ -157,6 +160,15 @@
 			name = Login;
 			sourceTree = "<group>";
 		};
+		5C6D18AA2235630C000D403B /* LoginAPI */ = {
+			isa = PBXGroup;
+			children = (
+				5C6D18A422355C12000D403B /* FBRequester.swift */,
+				5C6D18AB22356321000D403B /* KakaoRequester.swift */,
+			);
+			name = LoginAPI;
+			sourceTree = "<group>";
+		};
 		5CFE0F5922258F6900F62D4F /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,13 +222,13 @@
 		CE0DAED221CF5907004CB1A5 /* ToyCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				5C6D18AA2235630C000D403B /* LoginAPI */,
 				5CFE0F5D2225958D00F62D4F /* ViewController */,
 				5CFE0F5922258F6900F62D4F /* StoryBoard */,
 				CE0DAF0121CF5912004CB1A5 /* SupportingFiles */,
 				CE0DAED321CF5907004CB1A5 /* AppDelegate.swift */,
 				CE0DAED521CF5907004CB1A5 /* ViewController.swift */,
 				5CFE0F60222597B900F62D4F /* IBDesignExtension.swift */,
-				5C6D18A422355C12000D403B /* FBRequester.swift */,
 			);
 			path = ToyCalendar;
 			sourceTree = "<group>";
@@ -244,6 +256,7 @@
 			children = (
 				CE0DAEDA21CF5909004CB1A5 /* Assets.xcassets */,
 				CE0DAEDF21CF5909004CB1A5 /* Info.plist */,
+				5C6D18A622356072000D403B /* ToyCalendar-Bridging-Header.h */,
 			);
 			name = SupportingFiles;
 			sourceTree = "<group>";
@@ -331,6 +344,7 @@
 				TargetAttributes = {
 					CE0DAECF21CF5907004CB1A5 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					CE0DAEE321CF5909004CB1A5 = {
 						CreatedOnToolsVersion = 10.1;
@@ -481,6 +495,7 @@
 				CE0DAED621CF5907004CB1A5 /* ViewController.swift in Sources */,
 				CE0DAED421CF5907004CB1A5 /* AppDelegate.swift in Sources */,
 				5C3E660822266712005B64FC /* InitialEntryViewController.swift in Sources */,
+				5C6D18AC22356321000D403B /* KakaoRequester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,6 +679,7 @@
 			baseConfigurationReference = 09C5C693D2FBAC3A970FF5FB /* Pods-ToyCalendar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Y6MEDAL5W;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -681,6 +697,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yapp.ToyCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ToyCalendar/ToyCalendar-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -691,6 +709,7 @@
 			baseConfigurationReference = B08EBF93FBD9E2EEE940C8FF /* Pods-ToyCalendar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Y6MEDAL5W;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -708,6 +727,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yapp.ToyCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ToyCalendar/ToyCalendar-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -868,6 +888,7 @@
 			baseConfigurationReference = 65DD235D6EAB598A46950A4F /* Pods-ToyCalendar.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Y6MEDAL5W;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -885,6 +906,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yapp.ToyCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ToyCalendar/ToyCalendar-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

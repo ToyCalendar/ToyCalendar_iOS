@@ -59,6 +59,9 @@
                                         <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kakaoLoginBtn:" destination="ymx-qC-NBE" eventType="touchUpInside" id="iqB-J9-fmN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taP-am-lzu">
                                 <rect key="frame" x="16" y="481" width="343" height="47"/>

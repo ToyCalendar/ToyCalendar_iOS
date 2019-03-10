@@ -9,8 +9,13 @@
 import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
+
+
 class LoginViewController: UIViewController {
 
+    @IBAction func kakaoLoginBtn(_ sender: Any) {
+        KakoRequester.executeLogin()
+    }
     
     
     @IBAction func facebookLoginBtn(_ sender: Any) {
@@ -18,7 +23,8 @@ class LoginViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+    
         // Do any additional setup after loading the view.
     }
     
