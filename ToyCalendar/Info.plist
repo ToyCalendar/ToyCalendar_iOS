@@ -2,17 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-        <string>kakao92ec97b7422d01331a39daa8de171683</string>
-        <string>kakaokompassauth</string>
-        <string>storykompassauth</string>
-        <string>kakaolink</string>
-        <string>storylink</string>
-    </array>
-	<key>KAKAO_APP_KEY</key>
-	<string>92ec97b7422d01331a39daa8de171683</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -43,6 +32,14 @@
 				<string>kakao92ec97b7422d01331a39daa8de171683</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.1022792460718-opii1d382k35ro0a7ds7o1d0l95mpe1m.apps.googleusercontent.com</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
@@ -50,6 +47,8 @@
 	<string>494822744381462</string>
 	<key>FacebookDisplayName</key>
 	<string>ToyCalendar</string>
+	<key>KAKAO_APP_KEY</key>
+	<string>92ec97b7422d01331a39daa8de171683</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>

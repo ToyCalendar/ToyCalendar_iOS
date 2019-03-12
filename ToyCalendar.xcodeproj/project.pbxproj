@@ -14,6 +14,7 @@
 		5C6D18A32235554B000D403B /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6D18A22235554B000D403B /* FBSDKLoginKit.framework */; };
 		5C6D18A522355C12000D403B /* FBRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D18A422355C12000D403B /* FBRequester.swift */; };
 		5C6D18AC22356321000D403B /* KakaoRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D18AB22356321000D403B /* KakaoRequester.swift */; };
+		5C6D18AE223760B4000D403B /* LineRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D18AD223760B4000D403B /* LineRequester.swift */; };
 		5CFE0F5C2225920000F62D4F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CFE0F5B2225920000F62D4F /* Login.storyboard */; };
 		5CFE0F5F222595B400F62D4F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFE0F5E222595B400F62D4F /* LoginViewController.swift */; };
 		5CFE0F61222597B900F62D4F /* IBDesignExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFE0F60222597B900F62D4F /* IBDesignExtension.swift */; };
@@ -57,6 +58,7 @@
 		5C6D18A422355C12000D403B /* FBRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBRequester.swift; sourceTree = "<group>"; };
 		5C6D18A622356072000D403B /* ToyCalendar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToyCalendar-Bridging-Header.h"; sourceTree = "<group>"; };
 		5C6D18AB22356321000D403B /* KakaoRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoRequester.swift; sourceTree = "<group>"; };
+		5C6D18AD223760B4000D403B /* LineRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineRequester.swift; sourceTree = "<group>"; };
 		5CFE0F5B2225920000F62D4F /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		5CFE0F5E222595B400F62D4F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5CFE0F60222597B900F62D4F /* IBDesignExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignExtension.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				5C6D18A422355C12000D403B /* FBRequester.swift */,
 				5C6D18AB22356321000D403B /* KakaoRequester.swift */,
+				5C6D18AD223760B4000D403B /* LineRequester.swift */,
 			);
 			name = LoginAPI;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				CE0DAECD21CF5907004CB1A5 /* Frameworks */,
 				CE0DAECE21CF5907004CB1A5 /* Resources */,
 				AEFB9EB008AA591665ED1BD0 /* [CP] Embed Pods Frameworks */,
+				5E054D462EAFEAB66FB226E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -406,6 +410,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5E054D462EAFEAB66FB226E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ToyCalendar/Pods-ToyCalendar-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToyCalendar/Pods-ToyCalendar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7EE6AF2EE8A018AEC849BBFB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -452,12 +474,18 @@
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/LineSDKSwift/LineSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LineSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -495,6 +523,7 @@
 				CE0DAED621CF5907004CB1A5 /* ViewController.swift in Sources */,
 				CE0DAED421CF5907004CB1A5 /* AppDelegate.swift in Sources */,
 				5C3E660822266712005B64FC /* InitialEntryViewController.swift in Sources */,
+				5C6D18AE223760B4000D403B /* LineRequester.swift in Sources */,
 				5C6D18AC22356321000D403B /* KakaoRequester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
