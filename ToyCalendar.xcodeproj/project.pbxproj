@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C3E6605222666C5005B64FC /* InitialEntry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C3E6604222666C5005B64FC /* InitialEntry.storyboard */; };
+		5C3E660822266712005B64FC /* InitialEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3E660722266712005B64FC /* InitialEntryViewController.swift */; };
+		5C3E660A22267025005B64FC /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3E660922267025005B64FC /* KakaoOpenSDK.framework */; };
+		5C6D18A12235554B000D403B /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6D18A02235554B000D403B /* FBSDKCoreKit.framework */; };
+		5C6D18A32235554B000D403B /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6D18A22235554B000D403B /* FBSDKLoginKit.framework */; };
+		5C6D18A522355C12000D403B /* FBRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D18A422355C12000D403B /* FBRequester.swift */; };
+		5C6D18AC22356321000D403B /* KakaoRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D18AB22356321000D403B /* KakaoRequester.swift */; };
+		5C6D18AE223760B4000D403B /* LineRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D18AD223760B4000D403B /* LineRequester.swift */; };
+		5CFE0F5C2225920000F62D4F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CFE0F5B2225920000F62D4F /* Login.storyboard */; };
+		5CFE0F5F222595B400F62D4F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFE0F5E222595B400F62D4F /* LoginViewController.swift */; };
+		5CFE0F61222597B900F62D4F /* IBDesignExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFE0F60222597B900F62D4F /* IBDesignExtension.swift */; };
 		6DE22C93D00973C927C6F7E5 /* Pods_ToyCalendarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD451C84AD27584B1E5646A8 /* Pods_ToyCalendarUITests.framework */; };
 		BA33F70A803C034F637E0E66 /* Pods_ToyCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A2E0440A3119B6EB09DBAA /* Pods_ToyCalendar.framework */; };
 		C316AB8B5797C1E227DED407 /* Pods_ToyCalendarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97465CB67946F407A7A6572A /* Pods_ToyCalendarTests.framework */; };
@@ -39,6 +50,18 @@
 /* Begin PBXFileReference section */
 		09C5C693D2FBAC3A970FF5FB /* Pods-ToyCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyCalendar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToyCalendar/Pods-ToyCalendar.debug.xcconfig"; sourceTree = "<group>"; };
 		5476AA938902A47A3FC5563B /* Pods-ToyCalendarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyCalendarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToyCalendarTests/Pods-ToyCalendarTests.release.xcconfig"; sourceTree = "<group>"; };
+		5C3E6604222666C5005B64FC /* InitialEntry.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InitialEntry.storyboard; sourceTree = "<group>"; };
+		5C3E660722266712005B64FC /* InitialEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialEntryViewController.swift; sourceTree = "<group>"; };
+		5C3E660922267025005B64FC /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		5C6D18A02235554B000D403B /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C6D18A22235554B000D403B /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C6D18A422355C12000D403B /* FBRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBRequester.swift; sourceTree = "<group>"; };
+		5C6D18A622356072000D403B /* ToyCalendar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToyCalendar-Bridging-Header.h"; sourceTree = "<group>"; };
+		5C6D18AB22356321000D403B /* KakaoRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoRequester.swift; sourceTree = "<group>"; };
+		5C6D18AD223760B4000D403B /* LineRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineRequester.swift; sourceTree = "<group>"; };
+		5CFE0F5B2225920000F62D4F /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		5CFE0F5E222595B400F62D4F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5CFE0F60222597B900F62D4F /* IBDesignExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignExtension.swift; sourceTree = "<group>"; };
 		65DD235D6EAB598A46950A4F /* Pods-ToyCalendar.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyCalendar.staging.xcconfig"; path = "Pods/Target Support Files/Pods-ToyCalendar/Pods-ToyCalendar.staging.xcconfig"; sourceTree = "<group>"; };
 		86A2E0440A3119B6EB09DBAA /* Pods_ToyCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToyCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA54C6B3AEE844E7C6DE962 /* Pods-ToyCalendarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyCalendarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToyCalendarTests/Pods-ToyCalendarTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +98,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C6D18A12235554B000D403B /* FBSDKCoreKit.framework in Frameworks */,
+				5C6D18A32235554B000D403B /* FBSDKLoginKit.framework in Frameworks */,
 				BA33F70A803C034F637E0E66 /* Pods_ToyCalendar.framework in Frameworks */,
+				5C3E660A22267025005B64FC /* KakaoOpenSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +127,9 @@
 		26883B6423921F17AD286A98 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5C6D18A02235554B000D403B /* FBSDKCoreKit.framework */,
+				5C6D18A22235554B000D403B /* FBSDKLoginKit.framework */,
+				5C3E660922267025005B64FC /* KakaoOpenSDK.framework */,
 				86A2E0440A3119B6EB09DBAA /* Pods_ToyCalendar.framework */,
 				97465CB67946F407A7A6572A /* Pods_ToyCalendarTests.framework */,
 				BD451C84AD27584B1E5646A8 /* Pods_ToyCalendarUITests.framework */,
@@ -122,6 +151,52 @@
 				CE6F7996262231F583E00EFE /* Pods-ToyCalendarUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		5C3E6606222666DC005B64FC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5CFE0F5E222595B400F62D4F /* LoginViewController.swift */,
+				5C3E660722266712005B64FC /* InitialEntryViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		5C6D18AA2235630C000D403B /* LoginAPI */ = {
+			isa = PBXGroup;
+			children = (
+				5C6D18A422355C12000D403B /* FBRequester.swift */,
+				5C6D18AB22356321000D403B /* KakaoRequester.swift */,
+				5C6D18AD223760B4000D403B /* LineRequester.swift */,
+			);
+			name = LoginAPI;
+			sourceTree = "<group>";
+		};
+		5CFE0F5922258F6900F62D4F /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				5CFE0F5A222591F400F62D4F /* Login */,
+				CE0DAED721CF5907004CB1A5 /* Main.storyboard */,
+				CE0DAEDC21CF5909004CB1A5 /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		5CFE0F5A222591F400F62D4F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5CFE0F5B2225920000F62D4F /* Login.storyboard */,
+				5C3E6604222666C5005B64FC /* InitialEntry.storyboard */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		5CFE0F5D2225958D00F62D4F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5C3E6606222666DC005B64FC /* Login */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		CE0DAEC721CF5907004CB1A5 = {
@@ -150,11 +225,13 @@
 		CE0DAED221CF5907004CB1A5 /* ToyCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				5C6D18AA2235630C000D403B /* LoginAPI */,
+				5CFE0F5D2225958D00F62D4F /* ViewController */,
+				5CFE0F5922258F6900F62D4F /* StoryBoard */,
 				CE0DAF0121CF5912004CB1A5 /* SupportingFiles */,
 				CE0DAED321CF5907004CB1A5 /* AppDelegate.swift */,
 				CE0DAED521CF5907004CB1A5 /* ViewController.swift */,
-				CE0DAED721CF5907004CB1A5 /* Main.storyboard */,
-				CE0DAEDC21CF5909004CB1A5 /* LaunchScreen.storyboard */,
+				5CFE0F60222597B900F62D4F /* IBDesignExtension.swift */,
 			);
 			path = ToyCalendar;
 			sourceTree = "<group>";
@@ -182,6 +259,7 @@
 			children = (
 				CE0DAEDA21CF5909004CB1A5 /* Assets.xcassets */,
 				CE0DAEDF21CF5909004CB1A5 /* Info.plist */,
+				5C6D18A622356072000D403B /* ToyCalendar-Bridging-Header.h */,
 			);
 			name = SupportingFiles;
 			sourceTree = "<group>";
@@ -208,6 +286,8 @@
 				CE0DAECC21CF5907004CB1A5 /* Sources */,
 				CE0DAECD21CF5907004CB1A5 /* Frameworks */,
 				CE0DAECE21CF5907004CB1A5 /* Resources */,
+				AEFB9EB008AA591665ED1BD0 /* [CP] Embed Pods Frameworks */,
+				5E054D462EAFEAB66FB226E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,6 +348,7 @@
 				TargetAttributes = {
 					CE0DAECF21CF5907004CB1A5 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					CE0DAEE321CF5909004CB1A5 = {
 						CreatedOnToolsVersion = 10.1;
@@ -304,6 +385,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C3E6605222666C5005B64FC /* InitialEntry.storyboard in Resources */,
+				5CFE0F5C2225920000F62D4F /* Login.storyboard in Resources */,
 				CE0DAEDE21CF5909004CB1A5 /* LaunchScreen.storyboard in Resources */,
 				CE0DAEDB21CF5909004CB1A5 /* Assets.xcassets in Resources */,
 				CE0DAED921CF5907004CB1A5 /* Main.storyboard in Resources */,
@@ -327,20 +410,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7EE6AF2EE8A018AEC849BBFB /* [CP] Check Pods Manifest.lock */ = {
+		5E054D462EAFEAB66FB226E8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ToyCalendar/Pods-ToyCalendar-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToyCalendar/Pods-ToyCalendar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EE6AF2EE8A018AEC849BBFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ToyCalendarUITests-checkManifestLockResult.txt",
 			);
@@ -354,15 +451,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ToyCalendar-checkManifestLockResult.txt",
 			);
@@ -371,20 +464,44 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F9DF61305483F7212A5800A9 /* [CP] Check Pods Manifest.lock */ = {
+		AEFB9EB008AA591665ED1BD0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ToyCalendar/Pods-ToyCalendar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/LineSDKSwift/LineSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LineSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToyCalendar/Pods-ToyCalendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9DF61305483F7212A5800A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ToyCalendarTests-checkManifestLockResult.txt",
 			);
@@ -400,8 +517,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CFE0F61222597B900F62D4F /* IBDesignExtension.swift in Sources */,
+				5CFE0F5F222595B400F62D4F /* LoginViewController.swift in Sources */,
+				5C6D18A522355C12000D403B /* FBRequester.swift in Sources */,
 				CE0DAED621CF5907004CB1A5 /* ViewController.swift in Sources */,
 				CE0DAED421CF5907004CB1A5 /* AppDelegate.swift in Sources */,
+				5C3E660822266712005B64FC /* InitialEntryViewController.swift in Sources */,
+				5C6D18AE223760B4000D403B /* LineRequester.swift in Sources */,
+				5C6D18AC22356321000D403B /* KakaoRequester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +638,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -571,6 +695,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -583,15 +708,26 @@
 			baseConfigurationReference = 09C5C693D2FBAC3A970FF5FB /* Pods-ToyCalendar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9RVFJQPN7Q;
+				DEVELOPMENT_TEAM = 2Y6MEDAL5W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ToyCalendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yapp.ToyCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ToyCalendar/ToyCalendar-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -602,15 +738,25 @@
 			baseConfigurationReference = B08EBF93FBD9E2EEE940C8FF /* Pods-ToyCalendar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9RVFJQPN7Q;
+				DEVELOPMENT_TEAM = 2Y6MEDAL5W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ToyCalendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yapp.ToyCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ToyCalendar/ToyCalendar-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -759,6 +905,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -770,15 +917,26 @@
 			baseConfigurationReference = 65DD235D6EAB598A46950A4F /* Pods-ToyCalendar.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9RVFJQPN7Q;
+				DEVELOPMENT_TEAM = 2Y6MEDAL5W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ToyCalendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yapp.ToyCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ToyCalendar/ToyCalendar-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
