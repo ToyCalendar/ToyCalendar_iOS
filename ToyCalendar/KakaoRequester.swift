@@ -11,26 +11,16 @@ import Foundation
 class KakoRequester{
     static func executeLogin(){
         let session = KOSession.shared()
-        if let s = session{
-            if s.isOpen(){
-                s.close()
+        if let session = session{
+            if session.isOpen(){
+                session.close()
             }
-            s.open(completionHandler: {(error) in
+            session.open(completionHandler: {(error) in
                 if error == nil{
-                    print("No error")
-                    if s.isOpen(){
-                        print("Success")
+                    if session.isOpen(){
                     }
-                    else{
-                        print("Fail")
-                    }
-                }
-                else{
-                    print("Error login: \(error!)")
                 }
             })
-        }else{
-            print("Seesion error")
         }
     }
 }

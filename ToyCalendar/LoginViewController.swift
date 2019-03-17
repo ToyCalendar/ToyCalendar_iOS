@@ -11,7 +11,7 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import GoogleSignIn
 import LineSDK
-class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate{
+class LoginViewController: UIViewController{
     
     
     
@@ -38,13 +38,18 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    
-        
     }
     
+    
+   
+
+    
+}
+
+extension LoginViewController: GIDSignInDelegate, GIDSignInUIDelegate{
+    
     func signInWillDispatch(signIn: GIDSignIn!, error: NSError!) {
-//        UIActivityIndicatorView.stopAnimating()
+        //        UIActivityIndicatorView.stopAnimating()
     }
     
     // Present a view that prompts the user to sign in with Google
@@ -75,7 +80,4 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
             print("\(error.localizedDescription)")
         }
     }
-   
-
-    
 }
