@@ -36,7 +36,7 @@ class ReportBarChart: UIView {
             if let dataEntries = dataEntries {
                 scrollView.contentSize = CGSize(width: (barWidth + space)*CGFloat(dataEntries.count), height: self.frame.size.height)
                 mainLayer.frame = CGRect(x: 0, y: 0, width: scrollView.contentSize.width, height: scrollView.contentSize.height)
-                
+                //차트 뒷부분에 나오는 흰색 선
                 drawHorizontalLines()
                 
                 for i in 0..<dataEntries.count {
@@ -80,10 +80,10 @@ class ReportBarChart: UIView {
         drawBar(xPos: xPos, yPos: yPos, color: entry.color)
         
         /// Draw text above the bar
-        drawTextValue(xPos: xPos - space/2, yPos: yPos - 30, textValue: entry.textValue, color: entry.color)
+        drawTextValue(xPos: xPos - space/2, yPos: yPos - 30, textValue: entry.textValue, color: .black)
         
         /// Draw text below the bar
-        drawTitle(xPos: xPos - space/2, yPos: mainLayer.frame.height - bottomSpace + 10, title: entry.title, color: entry.color)
+        drawTitle(xPos: xPos - space/2, yPos: mainLayer.frame.height - bottomSpace + 10, title: entry.title, color: .black)
     }
     
     private func drawBar(xPos: CGFloat, yPos: CGFloat, color: UIColor) {
@@ -99,19 +99,23 @@ class ReportBarChart: UIView {
                 $0.removeFromSuperlayer()
             }
         })
-        let horizontalLineInfos = [["value": Float(0.0), "dashed": false], ["value": Float(0.5), "dashed": true], ["value": Float(1.0), "dashed": false]]
-        for lineInfo in horizontalLineInfos {
+//        let horizontalLineInfos = [["value": Float(0.0), "dashed": false], ["value": Float(0.5), "dashed": true], ["value": Float(1.0), "dashed": false]]
+        for row in 0..<8 {
             let xPos = CGFloat(0.0)
-            let yPos = translateHeightValueToYPosition(value: (lineInfo["value"] as! Float))
+//            let yPos = translateHeightValueToYPosition(value: (lineInfo["value"] as! Float))
+            
+            //0부터 시작
+            var yPos = self.frame.size.height - 40
+            yPos -= CGFloat(row*35)
             let path = UIBezierPath()
             path.move(to: CGPoint(x: xPos, y: yPos))
             path.addLine(to: CGPoint(x: scrollView.frame.size.width, y: yPos))
             let lineLayer = CAShapeLayer()
             lineLayer.path = path.cgPath
             lineLayer.lineWidth = 0.5
-            if lineInfo["dashed"] as! Bool {
-                lineLayer.lineDashPattern = [4, 4]
-            }
+//            if lineInfo["dashed"] as! Bool {
+//                lineLayer.lineDashPattern = [4, 4]
+//            }
             lineLayer.strokeColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1).cgColor
             self.layer.insertSublayer(lineLayer, at: 0)
         }

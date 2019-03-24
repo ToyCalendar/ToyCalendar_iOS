@@ -23,12 +23,13 @@ class ReportViewController: UIViewController {
     }
     
     func generateDataEntries() -> [BarEntry] {
-        let colors = #colorLiteral(red: 0.9019607843, green: 0.9019607843, blue: 0.9294117647, alpha: 0.9026380565)
+        let colors = #colorLiteral(red: 0.9019607843, green: 0.9019607843, blue: 0.9294117647, alpha: 0.7)
         
         var result: [BarEntry] = []
-        for i in 0..<3 {
-            let value = (arc4random() % 90) + 10
-            let height: Float = Float(value) / 100.0
+        for i in 0..<6 {
+            let value = (arc4random() % 30) + 10
+            //최대 Bar의 높이를 설정
+            let height: Float = Float(value) / 70.0
             
             let formatter = DateFormatter()
             formatter.dateFormat = "d MMM"
