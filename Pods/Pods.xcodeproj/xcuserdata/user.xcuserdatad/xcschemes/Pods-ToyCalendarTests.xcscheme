@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B98E6AAED7B9D9341A7E5CD4C35C9809"
+               BlueprintIdentifier = "FB5C8A37302061B6E828EB0B462CE0AF"
                BuildableName = "Pods_ToyCalendarTests.framework"
                BlueprintName = "Pods-ToyCalendarTests"
                ReferencedContainer = "container:Pods.xcodeproj">
