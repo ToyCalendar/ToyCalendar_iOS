@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YTI-xM-BfB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="1ac-xx-7FZ">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="YTI-xM-BfB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eiN-0e-JVZ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="uJ4-Ye-m21" kind="relationship" relationship="rootViewController" id="N5g-5g-ibL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zUB-jx-6Xa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-32" y="-203"/>
+        </scene>
+        <!--Splash Login View Controller-->
+        <scene sceneID="qD5-ya-IuQ">
+            <objects>
+                <viewController id="uJ4-Ye-m21" customClass="SplashLoginViewController" customModule="ToyCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9rN-yd-CBI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="TQo-re-hgk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BQR-PM-bAz"/>
+                    <connections>
+                        <segue destination="9yB-2B-15B" kind="show" id="sLw-47-iao"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QP1-5Q-fYH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="733" y="-204"/>
+        </scene>
+        <!--Splash Start View Controller-->
+        <scene sceneID="YWo-Jw-VgB">
+            <objects>
+                <viewController id="9yB-2B-15B" customClass="SplashStartViewController" customModule="ToyCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nmI-ZU-HMr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="lPf-mg-0cr"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5ak-YL-Xy6"/>
+                    <connections>
+                        <segue destination="wSO-hc-BAQ" kind="show" id="IGF-ZI-2mb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9u-g4-TuJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1484" y="-204"/>
+        </scene>
+        <!--Splash Period Check View Controller-->
+        <scene sceneID="GGO-me-21M">
+            <objects>
+                <viewController id="wSO-hc-BAQ" customClass="SplashPeriodCheckViewController" customModule="ToyCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I2M-nj-hJi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qWC-LS-pYd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <connections>
+                                    <segue destination="Zh1-An-3wb" kind="embed" id="rK2-j5-zKT"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QJS-0Z-czS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <connections>
+                                    <segue destination="feF-TL-bK6" kind="embed" id="2jq-mx-t4v"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YwB-CI-eQF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <connections>
+                                    <segue destination="sES-fW-X6E" kind="embed" id="DYF-0L-2mz"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRI-7H-z9h">
+                                <rect key="frame" x="0.0" y="44" width="414" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="129" id="kcK-R9-Lc4"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="DoS-vz-Ihx" kind="embed" id="EcT-hc-8Mc"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cRI-7H-z9h" firstAttribute="top" secondItem="tj2-ih-3jB" secondAttribute="top" id="5Mr-45-awo"/>
+                            <constraint firstItem="tj2-ih-3jB" firstAttribute="trailing" secondItem="YwB-CI-eQF" secondAttribute="trailing" id="Gdy-gk-q7e"/>
+                            <constraint firstAttribute="bottom" secondItem="qWC-LS-pYd" secondAttribute="bottom" id="L68-3U-mIu"/>
+                            <constraint firstItem="cRI-7H-z9h" firstAttribute="leading" secondItem="tj2-ih-3jB" secondAttribute="leading" id="OEP-1r-bVm"/>
+                            <constraint firstAttribute="bottom" secondItem="YwB-CI-eQF" secondAttribute="bottom" id="T08-5X-w07"/>
+                            <constraint firstItem="tj2-ih-3jB" firstAttribute="trailing" secondItem="QJS-0Z-czS" secondAttribute="trailing" id="eMc-aY-kEB"/>
+                            <constraint firstItem="tj2-ih-3jB" firstAttribute="trailing" secondItem="cRI-7H-z9h" secondAttribute="trailing" id="efO-4a-07w"/>
+                            <constraint firstItem="QJS-0Z-czS" firstAttribute="top" secondItem="tj2-ih-3jB" secondAttribute="top" id="fL8-ac-JUu"/>
+                            <constraint firstItem="YwB-CI-eQF" firstAttribute="leading" secondItem="tj2-ih-3jB" secondAttribute="leading" id="mkw-Co-BDW"/>
+                            <constraint firstAttribute="bottom" secondItem="QJS-0Z-czS" secondAttribute="bottom" id="o0z-du-kMd"/>
+                            <constraint firstItem="tj2-ih-3jB" firstAttribute="trailing" secondItem="qWC-LS-pYd" secondAttribute="trailing" id="pUj-WA-JOA"/>
+                            <constraint firstItem="QJS-0Z-czS" firstAttribute="leading" secondItem="tj2-ih-3jB" secondAttribute="leading" id="tYF-BJ-dXC"/>
+                            <constraint firstItem="YwB-CI-eQF" firstAttribute="top" secondItem="tj2-ih-3jB" secondAttribute="top" id="uex-bl-cze"/>
+                            <constraint firstItem="qWC-LS-pYd" firstAttribute="top" secondItem="tj2-ih-3jB" secondAttribute="top" id="wd9-D8-jgm"/>
+                            <constraint firstItem="qWC-LS-pYd" firstAttribute="leading" secondItem="tj2-ih-3jB" secondAttribute="leading" id="zst-MF-IH7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tj2-ih-3jB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="b9l-gE-tI5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rSc-n0-gcY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2255" y="-204"/>
+        </scene>
+        <!--Splash Navigation View Controller-->
+        <scene sceneID="qix-ZY-5aU">
+            <objects>
+                <viewController id="DoS-vz-Ihx" customClass="SplashNavigationViewController" customModule="ToyCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e4A-8s-3Dd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yf3-Jf-fhc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3012" y="-461"/>
+        </scene>
+        <!--Splash Period Check Calendar View Controller-->
+        <scene sceneID="qCm-Y4-F0S">
+            <objects>
+                <viewController id="Zh1-An-3wb" customClass="SplashPeriodCheckCalendarViewController" customModule="ToyCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qab-W8-5O8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VDV-OQ-GQg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5ft-Qr-7fW">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="scU-aY-fNE">
+                                        <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="X0I-uH-DVR">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eKv-pX-jPj">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="VDV-OQ-GQg" secondAttribute="bottom" id="Gym-d4-u7T"/>
+                            <constraint firstItem="VDV-OQ-GQg" firstAttribute="leading" secondItem="qab-W8-5O8" secondAttribute="leading" id="L2A-xx-e5I"/>
+                            <constraint firstAttribute="trailing" secondItem="VDV-OQ-GQg" secondAttribute="trailing" id="P7J-aQ-EY0"/>
+                            <constraint firstItem="VDV-OQ-GQg" firstAttribute="top" secondItem="qab-W8-5O8" secondAttribute="top" id="VI5-6k-zVB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFU-vv-oge" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3012" y="-85"/>
+        </scene>
+        <!--Splash Period Check Days View Controller-->
+        <scene sceneID="K80-fA-NAO">
+            <objects>
+                <viewController id="feF-TL-bK6" customClass="SplashPeriodCheckDaysViewController" customModule="ToyCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Lc-sK-Kr5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9DY-FU-fhJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2726" y="578"/>
+        </scene>
+        <!--Splash Period Check Days View Controller-->
+        <scene sceneID="jLZ-ya-JRz">
+            <objects>
+                <viewController id="sES-fW-X6E" customClass="SplashPeriodCheckDaysViewController" customModule="ToyCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HdM-hq-rAR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u9o-7j-WXo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2057" y="578"/>
+        </scene>
+    </scenes>
+</document>

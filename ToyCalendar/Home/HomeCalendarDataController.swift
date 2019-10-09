@@ -1,5 +1,5 @@
 //
-//  CalendarDataController.swift
+//  HomeCalendarDataController.swift
 //  ToyCalendar
 //
 //  Created by sdondon on 21/02/2019.
@@ -8,20 +8,20 @@
 
 import Foundation
 
-class CalendarData {
+class HomeCalendarData {
     var dummyString: String = ""
 }
 
-class CalendarDataController {
+class HomeCalendarDataController {
     private let requestor: TCApiRequest = TCApiRequest()
     
-    func requestData(completion: @escaping (CalendarData?) -> Void) {
+    func requestData(completion: @escaping (HomeCalendarData?) -> Void) {
         let queryItems: [URLQueryItem] = [URLQueryItem(name: "postId", value: "1")]
         
         requestor.cancel()
         requestor.baseURLPath = "https://jsonplaceholder.typicode.com/comments"
         requestor.fetch(with: queryItems) { [weak self] data, error in
-            let completionInMainThread = { (completion: @escaping (CalendarData?) -> Void, result: CalendarData?) in
+            let completionInMainThread = { (completion: @escaping (HomeCalendarData?) -> Void, result: HomeCalendarData?) in
                 DispatchQueue.main.async {
                     completion(result)
                 }
@@ -33,7 +33,7 @@ class CalendarDataController {
             }
             
             do {
-                let calendar: CalendarData? = try self?.parseCalendar(with: data)
+                let calendar: HomeCalendarData? = try self?.parseCalendar(with: data)
                 completionInMainThread(completion, calendar)
             } catch {
                 completionInMainThread(completion, nil)
@@ -42,13 +42,13 @@ class CalendarDataController {
     }
 }
 
-extension CalendarDataController {
-    private func parseCalendar(with data: Data?) throws -> CalendarData? {
+extension HomeCalendarDataController {
+    private func parseCalendar(with data: Data?) throws -> HomeCalendarData? {
         guard let data = data, let jsons = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [[String: Any]] else {
             return nil
         }
         
         print(jsons)
-        return CalendarData()
+        return HomeCalendarData()
     }
 }
