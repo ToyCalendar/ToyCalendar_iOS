@@ -11,12 +11,27 @@
 		BA33F70A803C034F637E0E66 /* Pods_ToyCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A2E0440A3119B6EB09DBAA /* Pods_ToyCalendar.framework */; };
 		C316AB8B5797C1E227DED407 /* Pods_ToyCalendarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97465CB67946F407A7A6572A /* Pods_ToyCalendarTests.framework */; };
 		CE0DAED421CF5907004CB1A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DAED321CF5907004CB1A5 /* AppDelegate.swift */; };
-		CE0DAED621CF5907004CB1A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DAED521CF5907004CB1A5 /* ViewController.swift */; };
-		CE0DAED921CF5907004CB1A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0DAED721CF5907004CB1A5 /* Main.storyboard */; };
 		CE0DAEDB21CF5909004CB1A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0DAEDA21CF5909004CB1A5 /* Assets.xcassets */; };
 		CE0DAEDE21CF5909004CB1A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0DAEDC21CF5909004CB1A5 /* LaunchScreen.storyboard */; };
 		CE0DAEE921CF5909004CB1A5 /* ToyCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DAEE821CF5909004CB1A5 /* ToyCalendarTests.swift */; };
 		CE0DAEF421CF5909004CB1A5 /* ToyCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DAEF321CF5909004CB1A5 /* ToyCalendarUITests.swift */; };
+		CEF8EA70234DAAC000C2F986 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF8EA6F234DAAC000C2F986 /* Splash.storyboard */; };
+		CEF8EA72234DAAF400C2F986 /* SplashNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8EA71234DAAF400C2F986 /* SplashNavigationViewController.swift */; };
+		CEF8EA74234DAB0000C2F986 /* SplashLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8EA73234DAB0000C2F986 /* SplashLoginViewController.swift */; };
+		CEF8EA76234DAB1E00C2F986 /* SplashStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8EA75234DAB1E00C2F986 /* SplashStartViewController.swift */; };
+		CEF8EA78234DAB9F00C2F986 /* SplashPeriodCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8EA77234DAB9F00C2F986 /* SplashPeriodCheckViewController.swift */; };
+		CEF8EA7A234DABC200C2F986 /* SplashPeriodCheckCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8EA79234DABC200C2F986 /* SplashPeriodCheckCalendarViewController.swift */; };
+		CEF8EA7C234DACA200C2F986 /* SplashPeriodCheckDaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8EA7B234DACA200C2F986 /* SplashPeriodCheckDaysViewController.swift */; };
+		CEF8EA7F234DAD2C00C2F986 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF8EA7E234DAD2C00C2F986 /* Home.storyboard */; };
+		CEF8EA81234DAFB300C2F986 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8EA80234DAFB300C2F986 /* HomeViewController.swift */; };
+		CEF8EA83234DAFBF00C2F986 /* HomeCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8EA82234DAFBF00C2F986 /* HomeCalendarViewController.swift */; };
+		CEF8EA86234DAFE800C2F986 /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF8EA85234DAFE800C2F986 /* SideMenu.storyboard */; };
+		CEF8EA88234DAFF500C2F986 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8EA87234DAFF500C2F986 /* SideMenuViewController.swift */; };
+		CEF8EA8B234DB04B00C2F986 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8EA8A234DB04B00C2F986 /* ProfileEditViewController.swift */; };
+		CEF8EA8E234DB12B00C2F986 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF8EA8D234DB12B00C2F986 /* Main.storyboard */; };
+		CEF8EA90234DB13900C2F986 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8EA8F234DB13900C2F986 /* RootViewController.swift */; };
+		CEF8EA94234DB4D000C2F986 /* HomeBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8EA93234DB4D000C2F986 /* HomeBottomSheetViewController.swift */; };
+		CEF8EA96234DB58400C2F986 /* HomeCalendarNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8EA95234DB58400C2F986 /* HomeCalendarNavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +63,6 @@
 		BD451C84AD27584B1E5646A8 /* Pods_ToyCalendarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToyCalendarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0DAED021CF5907004CB1A5 /* ToyCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToyCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0DAED321CF5907004CB1A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE0DAED521CF5907004CB1A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE0DAED821CF5907004CB1A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE0DAEDA21CF5909004CB1A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE0DAEDD21CF5909004CB1A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE0DAEDF21CF5909004CB1A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,9 +76,25 @@
 		CE0DAF0421CF594A004CB1A5 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		CE0DAF0521CF5954004CB1A5 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		CE0DAF0621CF595E004CB1A5 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		CE0DAF0B21CF59BA004CB1A5 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
 		CE0DAF0C21CF59BB004CB1A5 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		CE6F7996262231F583E00EFE /* Pods-ToyCalendarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyCalendarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToyCalendarUITests/Pods-ToyCalendarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CEF8EA6F234DAAC000C2F986 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		CEF8EA71234DAAF400C2F986 /* SplashNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashNavigationViewController.swift; sourceTree = "<group>"; };
+		CEF8EA73234DAB0000C2F986 /* SplashLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashLoginViewController.swift; sourceTree = "<group>"; };
+		CEF8EA75234DAB1E00C2F986 /* SplashStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashStartViewController.swift; sourceTree = "<group>"; };
+		CEF8EA77234DAB9F00C2F986 /* SplashPeriodCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPeriodCheckViewController.swift; sourceTree = "<group>"; };
+		CEF8EA79234DABC200C2F986 /* SplashPeriodCheckCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPeriodCheckCalendarViewController.swift; sourceTree = "<group>"; };
+		CEF8EA7B234DACA200C2F986 /* SplashPeriodCheckDaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPeriodCheckDaysViewController.swift; sourceTree = "<group>"; };
+		CEF8EA7E234DAD2C00C2F986 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		CEF8EA80234DAFB300C2F986 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CEF8EA82234DAFBF00C2F986 /* HomeCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCalendarViewController.swift; sourceTree = "<group>"; };
+		CEF8EA85234DAFE800C2F986 /* SideMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SideMenu.storyboard; sourceTree = "<group>"; };
+		CEF8EA87234DAFF500C2F986 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		CEF8EA8A234DB04B00C2F986 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		CEF8EA8D234DB12B00C2F986 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CEF8EA8F234DB13900C2F986 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		CEF8EA93234DB4D000C2F986 /* HomeBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomSheetViewController.swift; sourceTree = "<group>"; };
+		CEF8EA95234DB58400C2F986 /* HomeCalendarNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCalendarNavigationViewController.swift; sourceTree = "<group>"; };
 		D28869FE7D50120FBCC705FE /* Pods-ToyCalendarUITests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyCalendarUITests.staging.xcconfig"; path = "Pods/Target Support Files/Pods-ToyCalendarUITests/Pods-ToyCalendarUITests.staging.xcconfig"; sourceTree = "<group>"; };
 		E73BFC3604FE92F586E71008 /* Pods-ToyCalendarTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyCalendarTests.staging.xcconfig"; path = "Pods/Target Support Files/Pods-ToyCalendarTests/Pods-ToyCalendarTests.staging.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,11 +179,14 @@
 		CE0DAED221CF5907004CB1A5 /* ToyCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				CE0DAF0121CF5912004CB1A5 /* SupportingFiles */,
+				CEF8EA8C234DB10200C2F986 /* Main */,
+				CEF8EA89234DB00400C2F986 /* Common */,
+				CEF8EA84234DAFD900C2F986 /* SideMenu */,
+				CEF8EA7D234DAD1C00C2F986 /* Home */,
+				CEF8EA6E234DAAA300C2F986 /* Splash */,
 				CE0DAED321CF5907004CB1A5 /* AppDelegate.swift */,
-				CE0DAED521CF5907004CB1A5 /* ViewController.swift */,
-				CE0DAED721CF5907004CB1A5 /* Main.storyboard */,
 				CE0DAEDC21CF5909004CB1A5 /* LaunchScreen.storyboard */,
+				CE0DAF0121CF5912004CB1A5 /* SupportingFiles */,
 			);
 			path = ToyCalendar;
 			sourceTree = "<group>";
@@ -195,6 +227,58 @@
 				CE0DAF0621CF595E004CB1A5 /* Release.xcconfig */,
 			);
 			name = Config;
+			sourceTree = "<group>";
+		};
+		CEF8EA6E234DAAA300C2F986 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				CEF8EA6F234DAAC000C2F986 /* Splash.storyboard */,
+				CEF8EA71234DAAF400C2F986 /* SplashNavigationViewController.swift */,
+				CEF8EA73234DAB0000C2F986 /* SplashLoginViewController.swift */,
+				CEF8EA75234DAB1E00C2F986 /* SplashStartViewController.swift */,
+				CEF8EA77234DAB9F00C2F986 /* SplashPeriodCheckViewController.swift */,
+				CEF8EA7B234DACA200C2F986 /* SplashPeriodCheckDaysViewController.swift */,
+				CEF8EA79234DABC200C2F986 /* SplashPeriodCheckCalendarViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		CEF8EA7D234DAD1C00C2F986 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CEF8EA7E234DAD2C00C2F986 /* Home.storyboard */,
+				CEF8EA80234DAFB300C2F986 /* HomeViewController.swift */,
+				CEF8EA82234DAFBF00C2F986 /* HomeCalendarViewController.swift */,
+				CEF8EA95234DB58400C2F986 /* HomeCalendarNavigationViewController.swift */,
+				CEF8EA93234DB4D000C2F986 /* HomeBottomSheetViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CEF8EA84234DAFD900C2F986 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				CEF8EA85234DAFE800C2F986 /* SideMenu.storyboard */,
+				CEF8EA87234DAFF500C2F986 /* SideMenuViewController.swift */,
+				CEF8EA8A234DB04B00C2F986 /* ProfileEditViewController.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		CEF8EA89234DB00400C2F986 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CEF8EA8C234DB10200C2F986 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CEF8EA8D234DB12B00C2F986 /* Main.storyboard */,
+				CEF8EA8F234DB13900C2F986 /* RootViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +370,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = CE0DAEC721CF5907004CB1A5;
 			productRefGroup = CE0DAED121CF5907004CB1A5 /* Products */;
@@ -304,9 +389,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF8EA86234DAFE800C2F986 /* SideMenu.storyboard in Resources */,
 				CE0DAEDE21CF5909004CB1A5 /* LaunchScreen.storyboard in Resources */,
+				CEF8EA7F234DAD2C00C2F986 /* Home.storyboard in Resources */,
+				CEF8EA8E234DB12B00C2F986 /* Main.storyboard in Resources */,
 				CE0DAEDB21CF5909004CB1A5 /* Assets.xcassets in Resources */,
-				CE0DAED921CF5907004CB1A5 /* Main.storyboard in Resources */,
+				CEF8EA70234DAAC000C2F986 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +488,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE0DAED621CF5907004CB1A5 /* ViewController.swift in Sources */,
+				CEF8EA7C234DACA200C2F986 /* SplashPeriodCheckDaysViewController.swift in Sources */,
+				CEF8EA72234DAAF400C2F986 /* SplashNavigationViewController.swift in Sources */,
+				CEF8EA94234DB4D000C2F986 /* HomeBottomSheetViewController.swift in Sources */,
+				CEF8EA90234DB13900C2F986 /* RootViewController.swift in Sources */,
+				CEF8EA78234DAB9F00C2F986 /* SplashPeriodCheckViewController.swift in Sources */,
+				CEF8EA96234DB58400C2F986 /* HomeCalendarNavigationViewController.swift in Sources */,
+				CEF8EA74234DAB0000C2F986 /* SplashLoginViewController.swift in Sources */,
+				CEF8EA8B234DB04B00C2F986 /* ProfileEditViewController.swift in Sources */,
+				CEF8EA88234DAFF500C2F986 /* SideMenuViewController.swift in Sources */,
+				CEF8EA7A234DABC200C2F986 /* SplashPeriodCheckCalendarViewController.swift in Sources */,
+				CEF8EA81234DAFB300C2F986 /* HomeViewController.swift in Sources */,
+				CEF8EA83234DAFBF00C2F986 /* HomeCalendarViewController.swift in Sources */,
+				CEF8EA76234DAB1E00C2F986 /* SplashStartViewController.swift in Sources */,
 				CE0DAED421CF5907004CB1A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,15 +537,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CE0DAED721CF5907004CB1A5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE0DAED821CF5907004CB1A5 /* Base */,
-				CE0DAF0B21CF59BA004CB1A5 /* ko */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE0DAEDC21CF5909004CB1A5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
