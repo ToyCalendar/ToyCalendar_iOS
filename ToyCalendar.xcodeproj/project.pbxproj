@@ -10,6 +10,8 @@
 		6DE22C93D00973C927C6F7E5 /* Pods_ToyCalendarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD451C84AD27584B1E5646A8 /* Pods_ToyCalendarUITests.framework */; };
 		BA33F70A803C034F637E0E66 /* Pods_ToyCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A2E0440A3119B6EB09DBAA /* Pods_ToyCalendar.framework */; };
 		C316AB8B5797C1E227DED407 /* Pods_ToyCalendarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97465CB67946F407A7A6572A /* Pods_ToyCalendarTests.framework */; };
+		CE0C6BF9234DC1F80025F096 /* TCApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C6BF8234DC1F80025F096 /* TCApiRequest.swift */; };
+		CE0C6BFB234DC2010025F096 /* HomeCalendarDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C6BFA234DC2010025F096 /* HomeCalendarDataController.swift */; };
 		CE0DAED421CF5907004CB1A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DAED321CF5907004CB1A5 /* AppDelegate.swift */; };
 		CE0DAEDB21CF5909004CB1A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0DAEDA21CF5909004CB1A5 /* Assets.xcassets */; };
 		CE0DAEDE21CF5909004CB1A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0DAEDC21CF5909004CB1A5 /* LaunchScreen.storyboard */; };
@@ -61,6 +63,8 @@
 		97465CB67946F407A7A6572A /* Pods_ToyCalendarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToyCalendarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08EBF93FBD9E2EEE940C8FF /* Pods-ToyCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyCalendar.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToyCalendar/Pods-ToyCalendar.release.xcconfig"; sourceTree = "<group>"; };
 		BD451C84AD27584B1E5646A8 /* Pods_ToyCalendarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToyCalendarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0C6BF8234DC1F80025F096 /* TCApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCApiRequest.swift; sourceTree = "<group>"; };
+		CE0C6BFA234DC2010025F096 /* HomeCalendarDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCalendarDataController.swift; sourceTree = "<group>"; };
 		CE0DAED021CF5907004CB1A5 /* ToyCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToyCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0DAED321CF5907004CB1A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0DAEDA21CF5909004CB1A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -249,6 +253,7 @@
 				CEF8EA7E234DAD2C00C2F986 /* Home.storyboard */,
 				CEF8EA80234DAFB300C2F986 /* HomeViewController.swift */,
 				CEF8EA82234DAFBF00C2F986 /* HomeCalendarViewController.swift */,
+				CE0C6BFA234DC2010025F096 /* HomeCalendarDataController.swift */,
 				CEF8EA95234DB58400C2F986 /* HomeCalendarNavigationViewController.swift */,
 				CEF8EA93234DB4D000C2F986 /* HomeBottomSheetViewController.swift */,
 			);
@@ -268,6 +273,7 @@
 		CEF8EA89234DB00400C2F986 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CE0C6BF8234DC1F80025F096 /* TCApiRequest.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -502,6 +508,8 @@
 				CEF8EA83234DAFBF00C2F986 /* HomeCalendarViewController.swift in Sources */,
 				CEF8EA76234DAB1E00C2F986 /* SplashStartViewController.swift in Sources */,
 				CE0DAED421CF5907004CB1A5 /* AppDelegate.swift in Sources */,
+				CE0C6BF9234DC1F80025F096 /* TCApiRequest.swift in Sources */,
+				CE0C6BFB234DC2010025F096 /* HomeCalendarDataController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
